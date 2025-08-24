@@ -9,6 +9,7 @@ export const ROUTES = {
     DISCUSS: "/discuss",
     INTERVIEW: "/interview",
     STORE: "/store",
+    DEMO: "/demo",
 };
 
 export default ROUTES;

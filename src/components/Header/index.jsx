@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
 import Button from "../Button";
 import UserDropdown from "../UserDropdown";
 import Icon from "../Icon";
 import { useTheme } from "../../hooks/useTheme";
+import { ROUTES } from "../../configs/routes";
 import styles from "./Header.module.scss";
 
 const Header = () => {
@@ -50,6 +52,9 @@ const Header = () => {
                                 className={styles.dropdown}
                             />
                         </a>
+                        <Link to={ROUTES.DEMO} className={styles.navItem}>
+                            Demo
+                        </Link>
                     </nav>
                 </div>
                 <div className={styles.right}>
